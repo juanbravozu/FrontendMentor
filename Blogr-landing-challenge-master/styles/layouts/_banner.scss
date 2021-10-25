@@ -1,0 +1,30 @@
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 240px 10% 150px 10%;
+    background-image: $red-gradient;
+    background-image: url('../images/bg-pattern-intro.svg'), $red-gradient;
+    background-position: 20% center, 0 0;
+    border-bottom-left-radius: 100px;
+    color: $light;
+
+    p {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 30px auto;
+
+        @include respond-to('medium') {
+            font-size: 2rem;
+            
+        }        
+    }
+
+    div {
+        display: flex;
+
+        button {
+            margin: 0 10px;
+        }
+    }
+}

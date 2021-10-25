@@ -1,0 +1,36 @@
+.btn {
+    display: block;
+    padding: 15px 0;
+    border-radius: 1000px;
+    min-width: 135px;
+    background-color: $light;
+    border: none;
+    color: $red;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+
+    &:hover, &:focus {
+        background-color: $light-red;
+        color: $light;
+        outline: none;
+    }
+
+    &--outline {
+        background: transparent;
+        border: $light 2px solid;
+        color: $light;
+
+        &:hover, &:focus {
+            background-color: $light;
+            color: $light-red;
+        }
+    }
+}
+
+a:not(.btn):hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Frontend Mentor | Blogr</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">
+        <img src="./images/logo.svg" alt="Blogr">
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <p tabindex="0">Product</p>
+            <div class="submenu">
+              <a href="#" tabindex="-1">Overview</a>
+              <a href="#" tabindex="-1">Pricing</a>
+              <a href="#" tabindex="-1">Marketplace</a>
+              <a href="#" tabindex="-1">Features</a>
+              <a href="#" tabindex="-1">Integrations</a>
+            </div>
+          </li>
+          <li>
+            <p tabindex="0">Company</p>
+            <div class="submenu">
+              <a href="#" tabindex="-1">About</a>
+              <a href="#" tabindex="-1">Team</a>
+              <a href="#" tabindex="-1">Blog</a>
+              <a href="#" tabindex="-1">Careers</a>
+            </div>
+          </li>
+          <li>
+            <p tabindex="0">Connect</p>
+            <div class="submenu">
+              <a href="#" tabindex="-1">Contact</a>
+              <a href="#" tabindex="-1">Newsletter</a>
+              <a href="#" tabindex="-1">LinkedIn</a>
+            </div>
+          </li>
+        </ul>
+    
+        <div>
+          <a href="#">Login</a>
+          <a href="#" class="btn">Sign Up</a>
+        </div>
+      </div>
+      
+      <button>
+        <img src="./images/icon-hamburger.svg" alt="Menu">
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="banner">
+      <h1>A modern publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+      <div>
+        <button class="btn">
+          Start for Free
+        </button>
+        <button class="btn btn--outline">
+          Learn More
+        </button>
+      </div>
+    </section>
+
+    <section id="editor">
+      <h2>Designed for the future</h2>
+      <div class="wrapper">
+        <div>
+          <h3>Introducing an extensible editor</h3>
+          <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+          <h3>Robust content management</h3>
+          <p>Flexible content management enables users to easily move through posts. Increase tge usability of yout blog by adding customized categories, sections, formats, or flow. With this functionality, you're in full control.</p>
+        </div>
+        <!--<img src="./images/illustration-editor-mobile.svg" 
+            srcset="./images/illustration-editor-mobile.svg 406w,
+                    ./images/illustration-editor-desktop.svg 925w"
+            sizes="(min-width: 769px) 70vw, 100vw"
+            alt=""> !-->
+
+        <picture>
+          <source srcset="./images/illustration-editor-desktop.svg" media="(min-width: 769px)">
+          <img src="./images/illustration-editor-mobile.svg" alt="">
+        </picture>
+      </div>
+    </section>
+    
+    <section id="infrastructure">
+      <div class="wrapper">
+        <img src="./images/illustration-phones.svg" alt="">
+        <div>
+          <h2>State of the Art Infrastructure</h2>
+          <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools">
+      <div class="wrapper">
+        <picture>
+          <source srcset="./images/illustration-laptop-desktop.svg" media="(min-width: 769px)">
+          <img src="./images/illustration-laptop-mobile.svg" alt="">
+        </picture>
+        <div>
+          <h3>Free, open, simple</h3>
+          <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to lear.n</p>
+          <h3>Powerful tooling</h3>
+          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <a href="#">
+        <img src="./images/logo.svg" alt="Blogr">
+      </a>
+  
+      <div>
+        <h4>Product</h4>
+        <a href="#">Overview</a>
+        <a href="#">Pricing</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Features</a>
+        <a href="#">Integrations</a>
+      </div>
+  
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+  
+      <div>
+        <h4>Connect</h4>
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>   
+    
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/juanbravozu" target="_blank">Juan Bravo</a>.</p>
+    </div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

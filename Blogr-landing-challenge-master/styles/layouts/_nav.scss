@@ -1,0 +1,254 @@
+header {
+    position: absolute;
+    width: 100%;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    color: $light;
+
+    .btn:focus {
+        outline: none;
+    }
+
+    .menu {
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        top: 120px;
+        left: 5%;
+        right: 5%;
+        z-index: 10;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: $light;
+        box-shadow: 5px 10px 20px rgba($color: $dark, $alpha: 0.15);
+
+        &--active {
+            display: flex;
+        }
+
+        div:not(.submenu) {
+            margin-top: auto;
+            border-top: $light-gray 1px solid;
+
+            a:first-child {
+                margin: 20px;
+            }
+
+            @media (max-width: 1024px) {
+                width: 100%;
+
+                a {
+                    font-weight: 600;
+                    color: $dark;
+
+                    &.btn {
+                        color: white;
+                        background-image: $red-gradient;
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color: $dark;
+        
+        p, a {
+            position: relative;
+            width: fit-content;
+            font-weight: 600;
+            margin: 20px auto;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        li:first-child p {
+            margin-top: 0;
+        }
+
+        li:last-child .submenu {
+            margin-bottom: 20px;
+        }
+
+        .submenu {
+            position: relative;
+            display: block;
+            border-radius: 10px;
+            padding: 0 25px;
+            background-color: rgba($color: $light-gray, $alpha: 0.3);
+            max-height: 0;
+            overflow-y: hidden;
+            transition: all 0.3s ease-out;
+
+            a {
+                display: block;
+                color: $dark-gray;
+            }
+        }
+
+        li {
+            position: relative;
+            width: 100%;
+            margin: 0 30px;
+            cursor: pointer;
+
+            p::after {
+                content: '';
+                position: absolute;
+                display: block;
+                right: -2rem;
+                top: 0.8rem;
+                width: 1.2rem;
+                height: 0.7rem;
+                background-image: url('../images/icon-arrow-dark.svg');
+                background-size: cover;
+                transition: transform 0.3s ease-out;
+            }
+
+            p:hover {
+                text-decoration: underline;
+            }
+
+            &.active {
+                p {
+                    color: $dark-gray;
+
+                    &::after {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .submenu {
+                    padding: 15px 25px;
+                    max-height: 500px;
+                }
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    a {
+        color: $light;
+    }
+
+    @include respond-to('huge') {
+        padding: 40px 144px;
+    }
+
+    @include respond-to('large') {
+
+        .menu {
+            display: flex;
+            position: static;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0;
+            background-color: transparent;
+            flex-direction: row;
+            box-shadow: unset;
+
+            div:not(.submenu) {
+                border: none;
+            }
+        }
+
+        ul {
+            flex-direction: row;
+            color: $light;
+            width: auto;
+            
+            p, a {
+                font-weight: 300;
+                margin: 0;
+            }
+
+            .submenu {
+                position: absolute;
+                min-width: 160px;
+                top: 40px;
+                background-color: $light;
+                transition-property: transform opacity;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-out;
+                opacity: 0;
+                transform: translateY(-10px);
+                pointer-events: none;
+                box-shadow: 5px 10px 20px rgba($color: $dark, $alpha: 0.15);
+
+                a{
+                    width: fit-content;
+                    color: $dark;
+                    margin: 15px 0;
+
+                    &:hover {
+                        font-weight: 600;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            li{
+                width: auto;
+
+                p::after {
+                    background-image: url('../images/icon-arrow-light.svg');
+                }
+
+                &.active {
+
+                    p{
+                        color: $light;
+                    }
+
+                    .submenu {
+                        opacity: 1;
+                        transform: none;
+                        pointer-events: unset;
+                    }
+                }
+            }
+        }     
+        
+        div {
+            flex-direction: row;
+            margin-left: auto;    
+        }
+
+        a {
+            &:first-child {
+                margin-right: 30px;
+            }    
+        }
+
+        button {
+            display: none;
+        }
+    }
+}
