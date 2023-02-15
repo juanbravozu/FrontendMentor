@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles/main.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice Generator App</title>
+  </head>
+  <body>
+    <article class="advice">
+      <h1>Advice #<span id="advice-id"></span></h1>
+      <p id="advice-text"></p>
+      <picture>
+        <source srcset="/pattern-divider-desktop.svg" media="(min-width: 400px)">
+        <img src="/pattern-divider-mobile.svg" alt="">
+      </picture>
+      <button aria-label="Get random advice">
+        <img src="/icon-dice.svg" alt="">
+      </button>
+    </article>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
