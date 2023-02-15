@@ -1,0 +1,63 @@
+@use 'sass:color' as color;
+
+.advice {
+  background-color: $card-color;
+  border-radius: 12px;
+  padding: 40px 24px;
+  padding-bottom: 64px;
+  position: relative;
+  width: min(100%, 500px);
+
+  h1, p {
+    text-align: center;
+  }
+
+  h1 {
+    color: $secondary;
+    font-size: remsize(12);
+    font-weight: 800;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  p {
+    color: $primary;
+    font-size: remsize(28);
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+
+  > img {
+    width: 100%;
+  }
+
+  button {
+    background-color: $secondary;
+    border: none;
+    border-radius: 50%;
+    bottom: 0; 
+    cursor: pointer;
+    display: grid;
+    height: 64px;
+    left: 50%;
+    place-items: center;
+    position: absolute;
+    transition: box-shadow .3s ease-out;
+    transform: translate(-50%, 50%);
+    width: 64px;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      border: none;
+      box-shadow: 0 0 16px $secondary;
+      outline: none;
+    }
+    
+    &:active {
+      background-color: color.adjust($secondary, $lightness: -7.5%);
+      box-shadow: 0 0 24px $secondary;
+    }
+  }
+}
