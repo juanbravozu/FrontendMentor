@@ -5,4 +5,4 @@ Here I store all of my [FrontendMentor](https://www.frontendmentor.io/home) chal
 | --- | --- | --- | --- | --- |
 | [Blogr Landing](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP) | HTML - SCSS - JS | 06-04-2021 | [Demo](blogr-challenge-juanbravozu.netlify.app) | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/Blogr-landing-challenge-master) |
 | [Calculator app](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29) | REACT - SCSS | 16-11-2021 | - | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/calculator-app) |
-| [Advice generator app](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) | HTML - SCSS - JS | 14-02-2023 | - | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/advice-generator-app) |
+| [Advice generator app](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) | HTML - SCSS - JS | 14-02-2023 | [Demo](https://advice-generator-app-tau-smoky.vercel.app/) | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/advice-generator-app) |
