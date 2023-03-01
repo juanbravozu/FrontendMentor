@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <main>
+      <div class="loader">
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <section>
+        <h1>IP Address Tracker</h1>
+  
+        <form id="ip-address">
+          <input name="ip-value" type="text" placeholder="Search for any IP address or domain">
+          <button>></button>
+        </form>
+  
+        <article>
+          <div class="info-container">
+            <p class="info-title">IP Address</p>
+            <p class="info-text" id="ip-text">-</p>
+          </div>
+          <div class="info-container">
+            <p class="info-title">Location</p>
+            <p class="info-text" id="location-text">-</p>
+          </div>
+          <div class="info-container">
+            <p class="info-title">Timezone</p>
+            <p class="info-text" id="timezone-text">-</p>
+          </div>
+          <div class="info-container">
+            <p class="info-title">Isp</p>
+            <p class="info-text" id="isp-text">-</p>
+          </div>
+        </article>
+      </section>
+
+      <div role="application" id="map"></div>
+    </main>
+    
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
