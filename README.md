@@ -3,6 +3,7 @@ Here I store all of my [FrontendMentor](https://www.frontendmentor.io/home) chal
 
 | Challenge | Tech used | Last Updated | Live Demo | Code |
 | --- | --- | --- | --- | --- |
-| [Blogr Landing](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP) | HTML - SCSS - JS | 06-04-2021 | [Demo](blogr-challenge-juanbravozu.netlify.app) | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/Blogr-landing-challenge-master) |
-| [Calculator app](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29) | REACT - SCSS | 16-11-2021 | - | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/calculator-app) |
+| [Blogr Landing](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP) | HTML - SCSS - JS | 06/04/2021 | [Demo](blogr-challenge-juanbravozu.netlify.app) | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/blogr-landing-page) |
+| [Calculator app](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29) | REACT - SCSS | 16/11/2021 | - | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/calculator-app) |
+| [NFT preview card](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) | HTML - SCSS | 10/02/2023 | - | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/nft-preview-card) |
 | [Advice generator app](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) | HTML - SCSS - JS | 14-02-2023 | [Demo](https://advice-generator-app-tau-smoky.vercel.app/) | [Code](https://github.com/juanbravozu/FrontendMentor/tree/master/advice-generator-app) |
